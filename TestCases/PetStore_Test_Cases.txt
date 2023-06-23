@@ -1,0 +1,77 @@
+Test Plan for Pet Store API Testing
+---
+
+Objective:
+The objective of this test plan is to verify the functionality and behavior of the Pet Store API (https://petstore.swagger.io/#/). The API will be tested for positive and negative scenarios to ensure it meets the specified requirements.
+
+Scope:
+This test plan covers testing the Pet Store API for the following operations:
+1. Add a new pet to the store.
+2. Update an existing pet.
+3. Find pets by status.
+4. Find pet by ID.
+5. Delete a pet from the store.
+6. Upload an image for a pet.
+
+Test Environment:
+The test environment should include the following:
+- The Pet Store API (https://petstore.swagger.io/#/)
+- Test data for positive and negative test scenarios
+- API testing tools/framework (e.g., Postman, RestSharp, etc.)
+
+Test Cases:
+---
+
+1. Add a new pet to the store:
+
+Positive Test Cases:
+- Verify that a new pet can be added successfully with valid data.
+- Verify that the added pet is retrievable using the "Get Pet by ID" operation.
+- Verify that the added pet is listed when searching for pets by status.
+
+Negative Test Cases:
+- Verify that adding a pet with invalid or missing data results in an appropriate error response.
+- Verify that adding a pet with duplicate ID results in an appropriate error response.
+- Verify that adding a pet with an invalid status results in an appropriate error response.
+
+2. Update an existing pet:
+
+Positive Test Cases:
+- Verify that an existing pet can be updated successfully with valid data.
+- Verify that the updated pet data can be retrieved using the "Get Pet by ID" operation.
+- Verify that the updated pet data is reflected when searching for pets by status.
+
+Negative Test Cases:
+- Verify that updating a non-existent pet results in an appropriate error response.
+- Verify that updating a pet with invalid or missing data results in an appropriate error response.
+
+3. Find pets by status:
+
+Positive Test Cases:
+- Verify that pets with a specific status can be retrieved successfully.
+- Verify that the retrieved pets match the specified status.
+
+Negative Test Cases:
+- Verify that searching for pets with an invalid or unsupported status results in an appropriate error response.
+
+4. Find pet by ID:
+
+Positive Test Cases:
+- Verify that a pet can be retrieved successfully by its ID.
+- Verify that the retrieved pet matches the specified ID.
+
+Negative Test Cases:
+- Verify that searching for a non-existent pet ID results in an appropriate error response.
+- Verify that searching for a pet with an invalid or unsupported ID format results in an appropriate error response.
+
+5. Delete a pet from the store:
+
+Positive Test Cases:
+- Verify that an existing pet can be deleted successfully.
+- Verify that the deleted pet is no longer retrievable using the "Get Pet by ID" operation.
+- Verify that the deleted pet is not listed when searching for pets by status.
+
+Negative Test Cases:
+- Verify that deleting a non-existent pet results in an appropriate error response.
+- Verify that deleting a pet with an invalid or unsupported ID format results in an appropriate error response.
+
